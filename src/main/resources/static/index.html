@@ -231,11 +231,11 @@
     <link rel="stylesheet" href="/snmg/css/animate.min.css">
     <link rel="stylesheet" href="/snmg/css/swiper.bundle.css" loading="lazy">
     <link rel="stylesheet" href="/snmg/css/all.min.css" loading="lazy">
-    <script type="text/javascript" src="/snmg/js/jquery-1.11.1.min.js.다운로드"></script>
-    <script type="text/javascript" src="/snmg/js/jquery.form.js.다운로드"></script>
-    <script type="text/javascript" src="/snmg/js/jquery.viewportchecker.js.다운로드"></script>
-    <script type="text/javascript" src="/snmg/js/global.js.다운로드"></script>
-    <script type="text/javascript" src="/snmg/js/callWeb2App.js.다운로드"></script>
+    <script type="text/javascript" src="/snmg/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/snmg/js/jquery.form.js"></script>
+    <script type="text/javascript" src="/snmg/js/jquery.viewportchecker.js"></script>
+    <script type="text/javascript" src="/snmg/js/global.js"></script>
+    <script type="text/javascript" src="/snmg/js/callWeb2App.js"></script>
     <script>
         const mp_hname = '경민컨벤션웨딩홀';
         const mp_x = 126.8902633;
@@ -1907,7 +1907,7 @@
                 수남, 명주의 결혼식이 <span class="dd" id="dday"></span> 남았습니다.
             </div>
         </div>
-        <script src="/snmg/js/moment.js.다운로드"></script>
+        <script src="/snmg/js/moment.js"></script>
         <script>
             function getClock() {
                 /*
@@ -3020,128 +3020,6 @@
             </div>
         </form>
     </div>
-    <div class="sectionMg layer layer03 clearfix" id="attendLayerId">
-        <div class="sectionHead anibox hd">
-            <div class="enstr">R.S.V.P.</div>
-            <span class="name">참석 의사 전달</span>
-            <div class="sectionDesc">현재 거리두기로 인해 백신접종에 따른 <br>수용인원이 달라, 정확한 인원 확인을 <br>위해 꼭 알맞게 체크 부탁드려요!</div>
-            <div class="private-attend" style="text-align: center;">
-                <div class="private-attend-one">
-                    <a id="att_op_id" class="wrt btn str"><span class="i"><i class="fa fa-check"></i>&nbsp;</span>참석 의사
-                        전달하기</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-
-        $(document).ready(function () {
-            $('.anibox_attend').addClass("hd").viewportChecker({
-                classToAdd: 'visible animated faster fadeInUp',
-                offset: 100
-            });
-        });
-
-        var att_write_sctop = 0;
-        // 작성 팝업 열기
-        $("#att_op_id").click(function () {
-            att_write_sctop = $(window).scrollTop();
-
-            $("#att_op").css("display", "block");
-            $("html,body").css("height", "100%");
-            $("html,body").css("overflow-y", "hidden");
-        });
-        // 팝업 닫기
-        $("#att_op .clse").click(function () {
-
-            $("html,body").css("height", "auto");
-            $("html,body").css("overflow-y", "visible");
-            $("html, body").animate({scrollTop: att_write_sctop}, 10);
-
-            $(this).parents(".wpopclass").css("display", "none");
-
-        });
-
-
-        $(".att-fdver select[name=cnt]").change(function () {
-            if ($(this).val() != "1") {
-                $(".companion-fd").css("display", "block");
-            } else {
-                $(".companion-fd").css("display", "none");
-            }
-        });
-
-        $("input[name=attendFlag]").change(function () {
-            if ($("input[name=attendFlag]:checked").val() == "true") {
-                $(".attendflag-fd").css("display", "block");
-            } else {
-                $(".attendflag-fd").css("display", "none");
-            }
-        });
-
-
-        // 참석의사 전달하기
-        $("#att_op .att-fdver-btn").click(function () {
-
-            alert("샘플 청첩장에는 참석의사 전달이 불가능합니다.");
-            return;
-            var data = $("#att_op form").serializeObject();
-            if (!check.isNotNull(data.name)) {
-                alert("참석자 성함을 입력해주세요.");
-                return;
-            }
-            data.name = data.name.trim();
-            if (data.name.length < 2) {
-                alert("이름은 2글자 이상 입력해주세요.");
-                return;
-            }
-            var sb = $("#att_op .opt_sb.sel").attr("data-val");
-
-
-            console.log(data);
-            if (data.attendFlag == "false") {
-                data.eatFlag = "";
-                data.vaccineFlag = "";
-            }
-
-            if (!$("#pagree").is(":checked")) {
-                alert("개인정보 수집 및 이용에 동의해주세요.");
-                return;
-            }
-            //return;
-
-            loading(true);
-
-            $.ajax({
-                type: 'post',
-                //dataType : "text",
-                //contentType : "application/json; charset=utf-8",
-                data: {
-                    "attendFlag": data.attendFlag,
-                    "companion": data.companion,
-                    "name": data.name,
-                    "genderFlag": data.genderFlag,
-                    "cnt": data.cnt,
-                    "tel": data.tel,
-                    "eatFlag": data.eatFlag,
-                    "vaccineFlag": data.vaccineFlag,
-                    "msg": data.msg
-                },
-                url: '/card-attend/Zq6maHONAZmMgTmXvFLKiqeUe5njUQ',
-                headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
-                success: function (data) {
-                    loading(false);
-                    alert("참석의사를 전달 완료 했습니다.");
-                    location.href = "/card/Zq6maHONAZmMgTmXvFLKiqeUe5njUQ";
-                },
-                error: function (err) {
-                    loading(true);
-                    alert("등록 중에 문제가 발생했습니다.\r\n문의하기로 연락주시면 확인 즉시 도와드리겠습니다.");
-                }
-            });
-        });
-    </script>
-
     <div class="endingLayer wave end-img-parent">
         <i class="rpd rpd01"></i><i class="rpd rpd02"></i><i class="rpd rpd03"></i><i class="rpd rpd04"></i>
         <div class="wave top">
@@ -3196,16 +3074,16 @@
 <!--        </div>-->
 <!--    </div>-->
 </div>
-<script src="/snmg/js/hls.js.다운로드"></script>
-<script src="/snmg/js/swiper-bundle.min.js.다운로드"></script>
-<script src="/snmg/js/moment.js.다운로드"></script>
-<script src="/snmg/js/moment-with-locales.js.다운로드"></script>
-<script src="/snmg/js/swiper-bundle.min.js.다운로드"></script>
-<script src="/snmg/js/fontawesome.min.js.다운로드" loading="lazy"></script>
-<script type="text/javascript" src="/snmg/js/maps.js.다운로드"></script>
-<script type="text/javascript" src="/snmg/js/maps-geocoder.js.다운로드"></script>
-<script type="text/javascript" src="/snmg/js/card.show.js.다운로드"></script>
-<script src="/snmg/js/kakao.min.js.다운로드"
+<script src="/snmg/js/hls.js"></script>
+<script src="/snmg/js/swiper-bundle.min.js"></script>
+<script src="/snmg/js/moment.js"></script>
+<script src="/snmg/js/moment-with-locales.js"></script>
+<script src="/snmg/js/swiper-bundle.min.js"></script>
+<script src="/snmg/js/fontawesome.min.js" loading="lazy"></script>
+<script type="text/javascript" src="/snmg/js/maps.js"></script>
+<script type="text/javascript" src="/snmg/js/maps-geocoder.js"></script>
+<script type="text/javascript" src="/snmg/js/card.show.js"></script>
+<script src="/snmg/js/kakao.min.js"
         integrity="sha384-eKjgHJ9+vwU/FCSUG3nV1RKFolUXLsc6nLQ2R1tD0t4YFPCvRmkcF8saIfOZNWf/"
         crossorigin="anonymous"></script>
 <script>

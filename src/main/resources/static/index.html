@@ -551,30 +551,15 @@
         </div>
     </div>
 </div>
-<script>
-    function loading(go) {
-        if (go) {
-            $("#loadBox2020").css("display", "block");
-        } else {
-            $("#loadBox2020").css("display", "none");
-        }
-    }
-</script>
 <div class="">
 </div>
-<script src="/snmg/js/hls.js.다운로드"></script>
-<script>
-    let isPlay = true
-</script>
 <div class="bgmbar anibox2 hd visible animated fadeInDown full-visible fadeBg">
     <p>배경음악이 준비되었습니다.</p>
     <a class="sound"><i class="fa fa-volume-off"></i></a>
 </div>
-
 <audio loop="" id="videoplay" data-url="src/bgm/love-story.mp3">
     <source src="https://theirmood.com/src/bgm/love-story.mp3" type="audio/mp3">
 </audio>
-
 <div class="pop_acct ft-gowun-bold" id="acctBox" style="display: none;">
     <div class="vcenterbox">
         <div class="bx">
@@ -775,29 +760,6 @@
         </div>
     </div>
 </div>
-<script src="/snmg/js/swiper-bundle.min.js.다운로드"></script>
-<script>
-    $(".popImg .x_button").click(function () {
-        $(".pageCover").removeClass("blur6");
-        $(".popImg").removeClass("visible");
-    });
-
-    function openMapImg() {
-        $(".pageCover").addClass("blur6");
-        $(".popImg").addClass("visible");
-    }
-
-    var mySwiper = new Swiper('#roughMapContainer', {
-        // Optional parameters
-        direction: '',
-        loop: false,
-
-        zoom: {
-            maxRatio: 3,
-            minRatio: 1
-        },
-    })
-</script>
 <div class="popNoticeImg">
     <a class="x_button">
         <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -818,26 +780,10 @@
                     </div>
                 </div>
             </div>
-            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        </div>
     </div>
 </div>
-<script>
-    $(".popNoticeImg .x_button").click(function () {
-        $(".pageCover").removeClass("blur6");
-        $(".popNoticeImg").removeClass("visible");
-    });
-
-    var mySwiper = new Swiper('#popNoticeImgWrap', {
-        // Optional parameters
-        direction: '',
-        loop: false,
-
-        zoom: {
-            maxRatio: 3,
-            minRatio: 1
-        },
-    })
-</script>
 <style>
     .pop-design {
         position: fixed;
@@ -963,19 +909,6 @@
         </div>
     </div>
 </div>
-<script>
-    function openAlert(txt) {
-        $(".popAlert .title").text(txt);
-        $(".popAlert").css("display", "block");
-    }
-
-    $(".popAlert .background, .popAlert button").click(function () {
-        $(".popAlert").css("display", "none");
-        if (isAcctBox) {
-            document.querySelector(`#acctBox`).style.display = 'block'
-        }
-    });
-</script>
 <div id="tel_popup">
     <a class="x_button">
         <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1069,13 +1002,6 @@
         </div>
     </div>
 </div>
-<script>
-    $("#tel_popup .x_button").click(function () {
-        $("body").removeClass("pop_contact_open");
-        $('html,body').css("overflow", "");
-        window.scrollTo(0, WIN_SCR_TOP);
-    });
-</script>
 <style>
     #interview_pop {
         position: fixed;
@@ -1262,13 +1188,6 @@
     </ul>
     <div style="height: 40px; display: block;"></div>
 </div>
-<script>
-    $("#interview_pop .x_button").click(function () {
-        $("body").removeClass("pop_interview_open");
-        $('html,body').css("overflow", "");
-        window.scrollTo(0, WIN_SCR_TOP);
-    });
-</script>
 <div class="pageCover clearfix single" style="position: relative; background-color:#fafafa">
     <div class="bg-eff-base bgeffectVal snow-bg"></div>
     <div class="layer mainV3">
@@ -1302,7 +1221,7 @@
                     <div class="main-img-parent">
                         <i class="rpd rpd01"></i><i class="rpd rpd02"></i><i class="rpd rpd03"></i><i
                             class="rpd rpd04"></i>
-                        <img src="/snmg/images/FndDoKqI5M-resize.webp">
+                        <img src="/snmg/images/1.jpg">
                     </div>
                     <div class="wave bottom">
                         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1403,8 +1322,6 @@
                 </p></div>
         </div>
         <div style="padding-bottom: 30px;">
-
-
             <div class="intro_middle_img anibox hd" style="padding-bottom: 15px;">
             </div>
             <div class="title2 anibox f17 introBottomDisplay intro_buttom_str hd"
@@ -1466,7 +1383,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="telAreaNone">
                 <div class="pic_0_ins line introBottomDisplay"
@@ -1475,40 +1391,36 @@
             <div class="telArea">
                 <a class="int_buttn" onclick="openContactPop()"><i class="fa fa-phone-alt"></i>&nbsp;연락하기</a>
             </div>
-
-
         </div>
     </div>
-    <div class="sectionMg interviewLayer">
-        <div class="sectionHead anibox hd">
-            <div class="enstr">INTERVIEW</div>
-            <span class="name">
-두 사람의 이야기
-</span>
-            <div style="font-family: inherit;" class="sectionDesc">결혼을 앞두고 저희 두 사람의<br>인터뷰를 준비했습니다.</div>
-            <div class="sectionBottom">
-                <div class="img-area two">
-                    <div>
-                        <img src="/snmg/images/0bTTI38w6F-r800.webp">
-                    </div>
-                    <div>
-                        <img src="/snmg/images/zhyEz254zg-r800.webp">
-                    </div>
-                </div>
-                <div class="btn-area">
-                    <a class="t-btn" onclick="openInterviewPop()"><i class="fa fa-envelope"
-                                                                     style="color: #404040; opacity: 0.2;"></i> 신랑 &amp;
-                        신부의 인터뷰 읽어보기</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--    <div class="sectionMg interviewLayer">-->
+<!--        <div class="sectionHead anibox hd">-->
+<!--            <div class="enstr">INTERVIEW</div>-->
+<!--            <span class="name">-->
+<!--두 사람의 이야기-->
+<!--</span>-->
+<!--            <div style="font-family: inherit;" class="sectionDesc">결혼을 앞두고 저희 두 사람의<br>인터뷰를 준비했습니다.</div>-->
+<!--            <div class="sectionBottom">-->
+<!--                <div class="img-area two">-->
+<!--                    <div>-->
+<!--                        <img src="/snmg/images/0bTTI38w6F-r800.webp">-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <img src="/snmg/images/zhyEz254zg-r800.webp">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="btn-area">-->
+<!--                    <a class="t-btn" onclick="openInterviewPop()"><i class="fa fa-envelope"-->
+<!--                                                                     style="color: #404040; opacity: 0.2;"></i> 신랑 &amp;-->
+<!--                        신부의 인터뷰 읽어보기</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <div class="sectionMg gallLayerWrapper layer layer03 clearfix">
         <div class="sectionHead anibox hd" style="padding: 30px 0px 30px 0px">
             <div class="enstr">GALLERY</div>
             <span class="name">우리의 순간</span></div>
-
-
         <div class="clearfix anibox hd">
             <div class="swiper-container mySwiper swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events swiper-container-autoheight"
                  style="overflow: visible;">
@@ -1517,105 +1429,103 @@
                     <div class="swiper-slide ss swiper-slide-duplicate swiper-slide-prev" data-order="19"
                          data-swiper-slide-index="19" role="group" aria-label="1 / 22" style="width: 425px;"><img
                             class="vs imgblk rs" data-cropdata="" style="width: 100%;"
-                            src="/snmg/images/t25qFXRKRL-r300.webp"></div>
+                            src="/snmg/images/1.jpg"></div>
                     <div class="swiper-slide ss swiper-slide-active" data-order="0" data-swiper-slide-index="0"
                          role="group" aria-label="2 / 22" style="width: 425px;"><img class="vs imgblk" data-cropdata=""
                                                                                      style="width: 100%;"
-                                                                                     src="/snmg/images/ZmIBjyHbAO-resize.webp">
-                    </div>
+                                                                                     src="/snmg/images/2.jpg"></div>
                     <div class="swiper-slide ss swiper-slide-next" data-order="1" data-swiper-slide-index="1"
                          role="group" aria-label="3 / 22" style="width: 425px;"><img class="vs imgblk rs"
                                                                                      data-cropdata=""
                                                                                      style="width: 100%;"
-                                                                                     src="/snmg/images/t5AdA2aWMK-r300.webp">
-                    </div>
+                                                                                     src="/snmg/images/3.jpg"></div>
                     <div class="swiper-slide ss" data-order="2" data-swiper-slide-index="2" role="group"
                          aria-label="4 / 22" style="width: 425px;"><img class="vs imgblk rs" data-cropdata=""
                                                                         style="width: 100%;"
-                                                                        src="/snmg/images/7vkeflUvq3-r300.webp"></div>
+                                                                        src="/snmg/images/4.jpg"></div>
                     <div class="swiper-slide ss" data-order="3" data-swiper-slide-index="3" role="group"
                          aria-label="5 / 22" style="width: 425px;"><img class="vs imgblk rs" data-cropdata=""
                                                                         style="width: 100%;"
-                                                                        src="/snmg/images/W0VI4RNGnp-r300.webp"></div>
+                                                                        src="/snmg/images/5.jpg"></div>
                     <div class="swiper-slide ss" data-order="4" data-swiper-slide-index="4" role="group"
                          aria-label="6 / 22" style="width: 425px;"><img class="vs imgblk rs" data-cropdata=""
                                                                         style="width: 100%;"
-                                                                        src="/snmg/images/9g63ne3c4T-r300.webp"></div>
+                                                                        src="/snmg/images/6.jpg"></div>
                     <div class="swiper-slide ss" data-order="5" data-swiper-slide-index="5" role="group"
                          aria-label="7 / 22" style="width: 425px;"><img class="vs imgblk rs" data-cropdata=""
                                                                         style="width: 100%;"
-                                                                        src="/snmg/images/dSpjPTJbml-r300.webp"></div>
+                                                                        src="/snmg/images/7.jpg"></div>
                     <div class="swiper-slide ss" data-order="6" data-swiper-slide-index="6" role="group"
                          aria-label="8 / 22" style="width: 425px;"><img class="vs imgblk rs" data-cropdata=""
                                                                         style="width: 100%;"
-                                                                        src="/snmg/images/3mqRbDpWWu-r300.webp"></div>
+                                                                        src="/snmg/images/8.jpg"></div>
                     <div class="swiper-slide ss" data-order="7" data-swiper-slide-index="7" role="group"
                          aria-label="9 / 22" style="width: 425px;"><img class="vs imgblk rs" data-cropdata=""
                                                                         style="width: 100%;"
-                                                                        src="/snmg/images/aFrQVdMGgR-r300.webp"></div>
+                                                                        src="/snmg/images/9.jpg"></div>
                     <div class="swiper-slide ss" data-order="8" data-swiper-slide-index="8" role="group"
                          aria-label="10 / 22" style="width: 425px;"><img class="vs imgblk rs" data-cropdata=""
                                                                          style="width: 100%;"
-                                                                         src="/snmg/images/HIbcPrAMQ7-r300.webp">
+                                                                         src="/snmg/images/10.jpg">
                     </div>
                     <div class="swiper-slide ss" data-order="9" data-swiper-slide-index="9" role="group"
                          aria-label="11 / 22" style="width: 425px;"><img class="vs imgblk rs" data-cropdata=""
                                                                          style="width: 100%;"
-                                                                         src="/snmg/images/Z9zOR8hb2a-r300.webp">
+                                                                         src="/snmg/images/11.jpg">
                     </div>
                     <div class="swiper-slide ss" data-order="10" data-swiper-slide-index="10" role="group"
                          aria-label="12 / 22" style="width: 425px;"><img class="vs imgblk rs" data-cropdata=""
                                                                          style="width: 100%;"
-                                                                         src="/snmg/images/SxK1AkYATE-r300.webp">
+                                                                         src="/snmg/images/12.jpg">
                     </div>
                     <div class="swiper-slide ss" data-order="11" data-swiper-slide-index="11" role="group"
                          aria-label="13 / 22" style="width: 425px;"><img class="vs imgblk rs" data-cropdata=""
                                                                          style="width: 100%;"
-                                                                         src="/snmg/images/7qgCR82tLf-r300.webp">
+                                                                         src="/snmg/images/13.jpg">
                     </div>
                     <div class="swiper-slide ss" data-order="12" data-swiper-slide-index="12" role="group"
                          aria-label="14 / 22" style="width: 425px;"><img class="vs imgblk rs" data-cropdata=""
                                                                          style="width: 100%;"
-                                                                         src="/snmg/images/gps0iHgthT-r300.webp">
+                                                                         src="/snmg/images/14.jpg">
                     </div>
                     <div class="swiper-slide ss" data-order="13" data-swiper-slide-index="13" role="group"
                          aria-label="15 / 22" style="width: 425px;"><img class="vs imgblk rs" data-cropdata=""
                                                                          style="width: 100%;"
-                                                                         src="/snmg/images/7hNOT2giaB-r300.webp">
+                                                                         src="/snmg/images/15.jpg">
                     </div>
                     <div class="swiper-slide ss" data-order="14" data-swiper-slide-index="14" role="group"
                          aria-label="16 / 22" style="width: 425px;"><img class="vs imgblk rs" data-cropdata=""
                                                                          style="width: 100%;"
-                                                                         src="/snmg/images/xQg6xgcKaO-r300.webp">
+                                                                         src="/snmg/images/16.jpg">
                     </div>
                     <div class="swiper-slide ss" data-order="15" data-swiper-slide-index="15" role="group"
                          aria-label="17 / 22" style="width: 425px;"><img class="vs imgblk rs" data-cropdata=""
                                                                          style="width: 100%;"
-                                                                         src="/snmg/images/P0cVBoTVTZ-r300.webp">
+                                                                         src="/snmg/images/17.jpg">
                     </div>
                     <div class="swiper-slide ss" data-order="16" data-swiper-slide-index="16" role="group"
                          aria-label="18 / 22" style="width: 425px;"><img class="vs imgblk rs" data-cropdata=""
                                                                          style="width: 100%;"
-                                                                         src="/snmg/images/nV6pO3EX8R-r300.webp">
+                                                                         src="/snmg/images/18.jpg">
                     </div>
                     <div class="swiper-slide ss" data-order="17" data-swiper-slide-index="17" role="group"
                          aria-label="19 / 22" style="width: 425px;"><img class="vs imgblk rs" data-cropdata=""
                                                                          style="width: 100%;"
-                                                                         src="/snmg/images/k0dDGL2h6H-r300.webp">
+                                                                         src="/snmg/images/19.jpg">
                     </div>
                     <div class="swiper-slide ss" data-order="18" data-swiper-slide-index="18" role="group"
                          aria-label="20 / 22" style="width: 425px;"><img class="vs imgblk rs" data-cropdata=""
                                                                          style="width: 100%;"
-                                                                         src="/snmg/images/PKaGtglpF9-r300.webp">
+                                                                         src="/snmg/images/20.jpg">
                     </div>
                     <div class="swiper-slide ss swiper-slide-duplicate-prev" data-order="19"
                          data-swiper-slide-index="19" role="group" aria-label="21 / 22" style="width: 425px;"><img
                             class="vs imgblk rs" data-cropdata="" style="width: 100%;"
-                            src="/snmg/images/t25qFXRKRL-r300.webp"></div>
+                            src="/snmg/images/21.jpg"></div>
                     <div class="swiper-slide ss swiper-slide-duplicate swiper-slide-duplicate-active" data-order="0"
                          data-swiper-slide-index="0" role="group" aria-label="22 / 22" style="width: 425px;"><img
                             class="vs imgblk rs" data-cropdata="" style="width: 100%;"
-                            src="/snmg/images/ZmIBjyHbAO-r300.webp"></div>
+                            src="/snmg/images/22.jpg"></div>
                 </div>
                 <div class="swiper-button-next swiper-opts" tabindex="0" role="button" aria-label="Next slide"
                      aria-controls="thumblistid"></div>
@@ -1687,83 +1597,83 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/ZmIBjyHbAO-r300.webp"></div>
+                                                                src="/snmg/images/1.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/t5AdA2aWMK-r300.webp"></div>
+                                                                src="/snmg/images/2.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/7vkeflUvq3-r300.webp"></div>
+                                                                src="/snmg/images/3.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/W0VI4RNGnp-r300.webp"></div>
+                                                                src="/snmg/images/4.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/9g63ne3c4T-r300.webp"></div>
+                                                                src="/snmg/images/5.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/dSpjPTJbml-r300.webp"></div>
+                                                                src="/snmg/images/6.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/3mqRbDpWWu-r300.webp"></div>
+                                                                src="/snmg/images/7.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/aFrQVdMGgR-r300.webp"></div>
+                                                                src="/snmg/images/8.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/HIbcPrAMQ7-r300.webp"></div>
+                                                                src="/snmg/images/9.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/Z9zOR8hb2a-r300.webp"></div>
+                                                                src="/snmg/images/10.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/SxK1AkYATE-r300.webp"></div>
+                                                                src="/snmg/images/11.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/7qgCR82tLf-r300.webp"></div>
+                                                                src="/snmg/images/12.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/gps0iHgthT-r300.webp"></div>
+                                                                src="/snmg/images/13.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/7hNOT2giaB-r300.webp"></div>
+                                                                src="/snmg/images/14.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/xQg6xgcKaO-r300.webp"></div>
+                                                                src="/snmg/images/15.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/P0cVBoTVTZ-r300.webp"></div>
+                                                                src="/snmg/images/16.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/nV6pO3EX8R-r300.webp"></div>
+                                                                src="/snmg/images/17.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/k0dDGL2h6H-r300.webp"></div>
+                                                                src="/snmg/images/18.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/PKaGtglpF9-r300.webp"></div>
+                                                                src="/snmg/images/19.jpg"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container"><img class="vs imgblk rs"
-                                                                src="/snmg/images/t25qFXRKRL-r300.webp"></div>
+                                                                src="/snmg/images/20.jpg"></div>
                     </div>
                 </div>
                 <div class="swiper-button-next swiper-opts"></div>
@@ -2117,253 +2027,236 @@
             </li>
             <li class="li f16">
                 <span class="n f18 ft-gowun-bold">지하철</span>
-                <p style="margin-left:0px;"><span style="color:#0d347f;">●</span> 1호선, <span
-                        style="color:#3b9f37;">●</span> 2호선 신도림역 3번 출구</p>
-                <p style="margin-left:0px;">&nbsp; &nbsp;· 테크노마트판매동 지하1층과 연결</p></li>
+                <p style="margin-left:0px;"><span style="color:#0d347f;">●</span>1호선 녹양역 1번출구(경민웨딩홀 셔틀 탑승)</p>
+                <p style="margin-left:0px;">&nbsp; &nbsp;· 경민컨벤션웨딩홀</p></li>
             <li class="li f16">
                 <span class="n f18 ft-gowun-bold">버스</span>
-                <p style="margin-left:0px;"><span style="color:rgb(0,0,0);">신도림역(17-102) 하차</span></p>
-                <p style="margin-left:0px;"><span style="color:#3b9f37;">● </span>지선 : 5619, 6411, 6511, 6611</p>
-                <p style="margin-left:0px;"><span style="color:#dd5c32;">●</span><span style="color:#3b9f37;"> </span>직행
-                    : 5200</p>
-                <p style="margin-left:0px;"><span style="color:#6fb26c;">●</span><span style="color:#3b9f37;"> </span>마을
-                    : 영등포09, 영등포12, 영등포13</p>
+                <p style="margin-left:0px;"><span style="color:rgb(0,0,0);">경민대학교(08012) 하차</span></p>
+                <p style="margin-left:0px;"><span style="color:#3b9f37;">● </span>지선 : 1, 3, 5, 21, 133번</p>
                 <p style="margin-left:0px;">&nbsp;</p>
-                <p style="margin-left:0px;"><span style="color:rgb(0,0,0);">신도림역(17-001) 하차</span></p>
-                <p style="margin-left:0px;"><span style="color:#0d347f;">●</span><span style="color:#3b9f37;"> </span>간선
-                    : 160, 503, 600, 660, 662</p>
-                <p style="margin-left:0px;"><span style="color:#3b9f37;">● </span>지선 :
-                    5615,5714,6512,6515,6516,6637,6640A,6713</p>
-                <p style="margin-left:0px;"><span style="color:#dd5c32;">●</span><span style="color:#3b9f37;"> </span>직행
-                    : 301, 320</p>
-                <p style="margin-left:0px;"><span style="color:#6fb26c;">●</span><span style="color:#3b9f37;"> </span>일반
-                    : 10, 11-1, 11-2, 83, 88, 530</p>
-                <p style="margin-left:0px;"><span style="color:#6ca8ce;">●</span><span style="color:#3b9f37;"> </span>공항
-                    : 6018</p>
-                <p style="margin-left:0px;">&nbsp;</p>
-                <p style="margin-left:0px;">· 하차 후 3번 출구 쪽으로 이동 후 테크노마트 판매동 지하 1층 통로 이용</p></li>
+                <p style="margin-left:0px;">· 하차 후 경민대학교 정문 이용</p></li>
             <li class="li f16">
                 <span class="n f18 ft-gowun-bold">자가용</span>
-                <p>● 네비게이션 : “웨딩시티 신도림” 검색</p>
+                <p>● 네비게이션 : “경민대학교” 검색</p>
                 <p>&nbsp; &nbsp;· 주소검색</p>
-                <p>&nbsp; &nbsp; &nbsp; &nbsp;“서울 구로구 새말로 97” 또는&nbsp;</p>
-                <p>&nbsp; &nbsp; &nbsp; &nbsp;“구로동 3-25” 입력</p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp;“경기도 의정부시 서부로 545” 또는&nbsp;</p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp;“가능동 590-21” 입력</p>
                 <p>&nbsp;</p>
                 <p>● 주차장 안내</p>
-                <p>&nbsp; &nbsp;· 테크노마트 지하주차장 이용 (B3~B7)</p>
+                <p>&nbsp; &nbsp;· 경민웨딩홀 주차장 이용</p>
                 <p>&nbsp; &nbsp;· 주차요원의 안내를 받으세요.</p></li>
         </ul>
     </div>
     <style>
 
     </style>
-    <div>
-        <div class="sectionMg layer anibox clearfix informationSection hd" style="margin: 70px 0 70px 0;">
-            <div>
-                <div class="sectionHead anibox hd">
-                    <div class="enstr">INFORMATION</div>
-                    <span class="name">예식정보 및 안내사항</span>
-                </div>
-                <div class="infoTab01 info-swiper-wrapper swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
-                    <div class="swiper-wrapper" id="swiper-wrapper-f1411b2c99ab641b" aria-live="polite"
-                         style="transition-duration: 0ms; transform: translate3d(-1167.5px, 0px, 0px);">
-                        <div class="tabContent box swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
-                             data-swiper-slide-index="0" role="group" aria-label="1 / 12" style="margin-right: 30px;">
-                            <div class="imgdiv">
-                                <div class="img"
-                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/party.jpg&#39;);"></div>
-                                <span class="vcenterbox txt">피로연 안내</span>
-                            </div>
-                            <div style="font-size: 1.6rem;">피로연 안내</div>
-                            <div class="sectionDesc"><p>거리가 멀어 본식에 참석하시기 어려운<br>분들을 위해 피로연 자리를 마련하였습니다.</p>
-                                <p>&nbsp;</p>
-                                <p>귀한 발걸음으로 두 사람의 앞날을<br>축하하여 주시면 더 큰 기쁨과 격려가 되겠습니다.</p>
-                                <p>&nbsp;</p>
-                                <p>제주 퍼시픽 호텔 2층, PEARL홀<br>2023년 12월 30일 (토) 저녁 7시</p></div>
-                            <div class="sectionBottom">
-                                <div class="btn-area">
-                                    <a class="t-btn" target="_blank" href="https://naver.me/F7C1BR1w">
-                                        피로연장 지도 보기
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tabContent box swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
-                             data-swiper-slide-index="1" role="group" aria-label="2 / 12" style="margin-right: 30px;">
-                            <div class="imgdiv">
-                                <div class="img"
-                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/parking.jpg&#39;);"></div>
-                                <span class="vcenterbox txt">주차장 안내</span>
-                            </div>
-                            <div style="font-size: 1.6rem;">주차장 안내</div>
-                            <div class="sectionDesc"><p>테크노마트 지하주차장<br>지하 3~7층 이용<br>-<br>주차 요원의 안내를 받으세요.</p></div>
-                            <div class="sectionBottom">
-                                <div class="btn-area">
-                                    <a class="t-btn" target="_blank" href="https://naver.me/GQNzkGWF">
-                                        주차장 입구 지도 보기
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tabContent box swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2"
-                             role="group" aria-label="3 / 12" style="margin-right: 30px;">
-                            <div class="imgdiv">
-                                <div class="img"
-                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/dining.jpg&#39;);"></div>
-                                <span class="vcenterbox txt">연회 &amp; 식사 안내</span>
-                            </div>
-                            <div style="font-size: 1.6rem;">연회 &amp; 식사 안내</div>
-                            <div class="sectionDesc"><p>웨딩시티는 티앤더블유의&nbsp;<br>30년 외식 노하우를 바탕으로</p>
-                                <p>&nbsp;</p>
-                                <p>"좋은재료 건강한 맛"을&nbsp;<br>제공하기 위하여 메뉴 하나하나를&nbsp;<br>정성을 다해 조리하고 있습니다.</p></div>
-                        </div>
-                        <div class="tabContent box swiper-slide swiper-slide-duplicate swiper-slide-prev"
-                             data-swiper-slide-index="3" role="group" aria-label="4 / 12" style="margin-right: 30px;">
-                            <div class="imgdiv">
-                                <div class="img"
-                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/photo_booth.jpg&#39;);"></div>
-                                <span class="vcenterbox txt">포토부스 이용안내</span>
-                            </div>
-                            <div style="font-size: 1.6rem;">포토부스 이용안내</div>
-                            <div class="sectionDesc"><p>포토부스가 설치될 예정입니다.&nbsp;<br>귀한 발걸음 해주신 여러분의&nbsp;<br>환한 미소와 따뜻한 말씀
-                                남겨주시면&nbsp;<br>소중히 간직하도록 하겠습니다.</p></div>
-                        </div>
-                        <div class="tabContent box swiper-slide swiper-slide-active" data-swiper-slide-index="0"
-                             role="group" aria-label="5 / 12" style="margin-right: 30px;">
-                            <div class="imgdiv">
-                                <div class="img"
-                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/party.jpg&#39;);"></div>
-                                <span class="vcenterbox txt">피로연 안내</span>
-                            </div>
-                            <div style="font-size: 1.6rem;">피로연 안내</div>
-                            <div class="sectionDesc"><p>거리가 멀어 본식에 참석하시기 어려운<br>분들을 위해 피로연 자리를 마련하였습니다.</p>
-                                <p>&nbsp;</p>
-                                <p>귀한 발걸음으로 두 사람의 앞날을<br>축하하여 주시면 더 큰 기쁨과 격려가 되겠습니다.</p>
-                                <p>&nbsp;</p>
-                                <p>제주 퍼시픽 호텔 2층, PEARL홀<br>2023년 12월 30일 (토) 저녁 7시</p></div>
-                            <div class="sectionBottom">
-                                <div class="btn-area">
-                                    <a class="t-btn" target="_blank" href="https://naver.me/F7C1BR1w">
-                                        피로연장 지도 보기
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tabContent box swiper-slide swiper-slide-next" data-swiper-slide-index="1"
-                             role="group" aria-label="6 / 12" style="margin-right: 30px;">
-                            <div class="imgdiv">
-                                <div class="img"
-                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/parking.jpg&#39;);"></div>
-                                <span class="vcenterbox txt">주차장 안내</span>
-                            </div>
-                            <div style="font-size: 1.6rem;">주차장 안내</div>
-                            <div class="sectionDesc"><p>테크노마트 지하주차장<br>지하 3~7층 이용<br>-<br>주차 요원의 안내를 받으세요.</p></div>
-                            <div class="sectionBottom">
-                                <div class="btn-area">
-                                    <a class="t-btn" target="_blank" href="https://naver.me/GQNzkGWF">
-                                        주차장 입구 지도 보기
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tabContent box swiper-slide" data-swiper-slide-index="2" role="group"
-                             aria-label="7 / 12" style="margin-right: 30px;">
-                            <div class="imgdiv">
-                                <div class="img"
-                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/dining.jpg&#39;);"></div>
-                                <span class="vcenterbox txt">연회 &amp; 식사 안내</span>
-                            </div>
-                            <div style="font-size: 1.6rem;">연회 &amp; 식사 안내</div>
-                            <div class="sectionDesc"><p>웨딩시티는 티앤더블유의&nbsp;<br>30년 외식 노하우를 바탕으로</p>
-                                <p>&nbsp;</p>
-                                <p>"좋은재료 건강한 맛"을&nbsp;<br>제공하기 위하여 메뉴 하나하나를&nbsp;<br>정성을 다해 조리하고 있습니다.</p></div>
-                        </div>
-                        <div class="tabContent box swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="3"
-                             role="group" aria-label="8 / 12" style="margin-right: 30px;">
-                            <div class="imgdiv">
-                                <div class="img"
-                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/photo_booth.jpg&#39;);"></div>
-                                <span class="vcenterbox txt">포토부스 이용안내</span>
-                            </div>
-                            <div style="font-size: 1.6rem;">포토부스 이용안내</div>
-                            <div class="sectionDesc"><p>포토부스가 설치될 예정입니다.&nbsp;<br>귀한 발걸음 해주신 여러분의&nbsp;<br>환한 미소와 따뜻한 말씀
-                                남겨주시면&nbsp;<br>소중히 간직하도록 하겠습니다.</p></div>
-                        </div>
-                        <div class="tabContent box swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
-                             data-swiper-slide-index="0" role="group" aria-label="9 / 12" style="margin-right: 30px;">
-                            <div class="imgdiv">
-                                <div class="img"
-                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/party.jpg&#39;);"></div>
-                                <span class="vcenterbox txt">피로연 안내</span>
-                            </div>
-                            <div style="font-size: 1.6rem;">피로연 안내</div>
-                            <div class="sectionDesc"><p>거리가 멀어 본식에 참석하시기 어려운<br>분들을 위해 피로연 자리를 마련하였습니다.</p>
-                                <p>&nbsp;</p>
-                                <p>귀한 발걸음으로 두 사람의 앞날을<br>축하하여 주시면 더 큰 기쁨과 격려가 되겠습니다.</p>
-                                <p>&nbsp;</p>
-                                <p>제주 퍼시픽 호텔 2층, PEARL홀<br>2023년 12월 30일 (토) 저녁 7시</p></div>
-                            <div class="sectionBottom">
-                                <div class="btn-area">
-                                    <a class="t-btn" target="_blank" href="https://naver.me/F7C1BR1w">
-                                        피로연장 지도 보기
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tabContent box swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
-                             data-swiper-slide-index="1" role="group" aria-label="10 / 12" style="margin-right: 30px;">
-                            <div class="imgdiv">
-                                <div class="img"
-                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/parking.jpg&#39;);"></div>
-                                <span class="vcenterbox txt">주차장 안내</span>
-                            </div>
-                            <div style="font-size: 1.6rem;">주차장 안내</div>
-                            <div class="sectionDesc"><p>테크노마트 지하주차장<br>지하 3~7층 이용<br>-<br>주차 요원의 안내를 받으세요.</p></div>
-                            <div class="sectionBottom">
-                                <div class="btn-area">
-                                    <a class="t-btn" target="_blank" href="https://naver.me/GQNzkGWF">
-                                        주차장 입구 지도 보기
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tabContent box swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2"
-                             role="group" aria-label="11 / 12" style="margin-right: 30px;">
-                            <div class="imgdiv">
-                                <div class="img"
-                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/dining.jpg&#39;);"></div>
-                                <span class="vcenterbox txt">연회 &amp; 식사 안내</span>
-                            </div>
-                            <div style="font-size: 1.6rem;">연회 &amp; 식사 안내</div>
-                            <div class="sectionDesc"><p>웨딩시티는 티앤더블유의&nbsp;<br>30년 외식 노하우를 바탕으로</p>
-                                <p>&nbsp;</p>
-                                <p>"좋은재료 건강한 맛"을&nbsp;<br>제공하기 위하여 메뉴 하나하나를&nbsp;<br>정성을 다해 조리하고 있습니다.</p></div>
-                        </div>
-                        <div class="tabContent box swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3"
-                             role="group" aria-label="12 / 12" style="margin-right: 30px;">
-                            <div class="imgdiv">
-                                <div class="img"
-                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/photo_booth.jpg&#39;);"></div>
-                                <span class="vcenterbox txt">포토부스 이용안내</span>
-                            </div>
-                            <div style="font-size: 1.6rem;">포토부스 이용안내</div>
-                            <div class="sectionDesc"><p>포토부스가 설치될 예정입니다.&nbsp;<br>귀한 발걸음 해주신 여러분의&nbsp;<br>환한 미소와 따뜻한 말씀
-                                남겨주시면&nbsp;<br>소중히 간직하도록 하겠습니다.</p></div>
-                        </div>
-                    </div>
-                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-            </div>
-        </div>
-    </div>
-    <script>
-        let spaceBetween = 30
-        new Swiper(".info-swiper-wrapper", {
-            slidesPerView: "auto",
-            centeredSlides: true,
-            spaceBetween: spaceBetween,
-            loop: true,
-            speed: 500,
-        })
+<!--    <div>-->
+<!--        <div class="sectionMg layer anibox clearfix informationSection hd" style="margin: 70px 0 70px 0;">-->
+<!--            <div>-->
+<!--                <div class="sectionHead anibox hd">-->
+<!--                    <div class="enstr">INFORMATION</div>-->
+<!--                    <span class="name">예식정보 및 안내사항</span>-->
+<!--                </div>-->
+<!--                <div class="infoTab01 info-swiper-wrapper swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">-->
+<!--                    <div class="swiper-wrapper" id="swiper-wrapper-f1411b2c99ab641b" aria-live="polite"-->
+<!--                         style="transition-duration: 0ms; transform: translate3d(-1167.5px, 0px, 0px);">-->
+<!--                        <div class="tabContent box swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"-->
+<!--                             data-swiper-slide-index="0" role="group" aria-label="1 / 12" style="margin-right: 30px;">-->
+<!--                            <div class="imgdiv">-->
+<!--                                <div class="img"-->
+<!--                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/party.jpg&#39;);"></div>-->
+<!--                                <span class="vcenterbox txt">피로연 안내</span>-->
+<!--                            </div>-->
+<!--                            <div style="font-size: 1.6rem;">피로연 안내</div>-->
+<!--                            <div class="sectionDesc"><p>거리가 멀어 본식에 참석하시기 어려운<br>분들을 위해 피로연 자리를 마련하였습니다.</p>-->
+<!--                                <p>&nbsp;</p>-->
+<!--                                <p>귀한 발걸음으로 두 사람의 앞날을<br>축하하여 주시면 더 큰 기쁨과 격려가 되겠습니다.</p>-->
+<!--                                <p>&nbsp;</p>-->
+<!--                                <p>제주 퍼시픽 호텔 2층, PEARL홀<br>2023년 12월 30일 (토) 저녁 7시</p></div>-->
+<!--                            <div class="sectionBottom">-->
+<!--                                <div class="btn-area">-->
+<!--                                    <a class="t-btn" target="_blank" href="https://naver.me/F7C1BR1w">-->
+<!--                                        피로연장 지도 보기-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="tabContent box swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"-->
+<!--                             data-swiper-slide-index="1" role="group" aria-label="2 / 12" style="margin-right: 30px;">-->
+<!--                            <div class="imgdiv">-->
+<!--                                <div class="img"-->
+<!--                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/parking.jpg&#39;);"></div>-->
+<!--                                <span class="vcenterbox txt">주차장 안내</span>-->
+<!--                            </div>-->
+<!--                            <div style="font-size: 1.6rem;">주차장 안내</div>-->
+<!--                            <div class="sectionDesc"><p>테크노마트 지하주차장<br>지하 3~7층 이용<br>-<br>주차 요원의 안내를 받으세요.</p></div>-->
+<!--                            <div class="sectionBottom">-->
+<!--                                <div class="btn-area">-->
+<!--                                    <a class="t-btn" target="_blank" href="https://naver.me/GQNzkGWF">-->
+<!--                                        주차장 입구 지도 보기-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="tabContent box swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2"-->
+<!--                             role="group" aria-label="3 / 12" style="margin-right: 30px;">-->
+<!--                            <div class="imgdiv">-->
+<!--                                <div class="img"-->
+<!--                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/dining.jpg&#39;);"></div>-->
+<!--                                <span class="vcenterbox txt">연회 &amp; 식사 안내</span>-->
+<!--                            </div>-->
+<!--                            <div style="font-size: 1.6rem;">연회 &amp; 식사 안내</div>-->
+<!--                            <div class="sectionDesc"><p>웨딩시티는 티앤더블유의&nbsp;<br>30년 외식 노하우를 바탕으로</p>-->
+<!--                                <p>&nbsp;</p>-->
+<!--                                <p>"좋은재료 건강한 맛"을&nbsp;<br>제공하기 위하여 메뉴 하나하나를&nbsp;<br>정성을 다해 조리하고 있습니다.</p></div>-->
+<!--                        </div>-->
+<!--                        <div class="tabContent box swiper-slide swiper-slide-duplicate swiper-slide-prev"-->
+<!--                             data-swiper-slide-index="3" role="group" aria-label="4 / 12" style="margin-right: 30px;">-->
+<!--                            <div class="imgdiv">-->
+<!--                                <div class="img"-->
+<!--                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/photo_booth.jpg&#39;);"></div>-->
+<!--                                <span class="vcenterbox txt">포토부스 이용안내</span>-->
+<!--                            </div>-->
+<!--                            <div style="font-size: 1.6rem;">포토부스 이용안내</div>-->
+<!--                            <div class="sectionDesc"><p>포토부스가 설치될 예정입니다.&nbsp;<br>귀한 발걸음 해주신 여러분의&nbsp;<br>환한 미소와 따뜻한 말씀-->
+<!--                                남겨주시면&nbsp;<br>소중히 간직하도록 하겠습니다.</p></div>-->
+<!--                        </div>-->
+<!--                        <div class="tabContent box swiper-slide swiper-slide-active" data-swiper-slide-index="0"-->
+<!--                             role="group" aria-label="5 / 12" style="margin-right: 30px;">-->
+<!--                            <div class="imgdiv">-->
+<!--                                <div class="img"-->
+<!--                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/party.jpg&#39;);"></div>-->
+<!--                                <span class="vcenterbox txt">피로연 안내</span>-->
+<!--                            </div>-->
+<!--                            <div style="font-size: 1.6rem;">피로연 안내</div>-->
+<!--                            <div class="sectionDesc"><p>거리가 멀어 본식에 참석하시기 어려운<br>분들을 위해 피로연 자리를 마련하였습니다.</p>-->
+<!--                                <p>&nbsp;</p>-->
+<!--                                <p>귀한 발걸음으로 두 사람의 앞날을<br>축하하여 주시면 더 큰 기쁨과 격려가 되겠습니다.</p>-->
+<!--                                <p>&nbsp;</p>-->
+<!--                                <p>제주 퍼시픽 호텔 2층, PEARL홀<br>2023년 12월 30일 (토) 저녁 7시</p></div>-->
+<!--                            <div class="sectionBottom">-->
+<!--                                <div class="btn-area">-->
+<!--                                    <a class="t-btn" target="_blank" href="https://naver.me/F7C1BR1w">-->
+<!--                                        피로연장 지도 보기-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="tabContent box swiper-slide swiper-slide-next" data-swiper-slide-index="1"-->
+<!--                             role="group" aria-label="6 / 12" style="margin-right: 30px;">-->
+<!--                            <div class="imgdiv">-->
+<!--                                <div class="img"-->
+<!--                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/parking.jpg&#39;);"></div>-->
+<!--                                <span class="vcenterbox txt">주차장 안내</span>-->
+<!--                            </div>-->
+<!--                            <div style="font-size: 1.6rem;">주차장 안내</div>-->
+<!--                            <div class="sectionDesc"><p>테크노마트 지하주차장<br>지하 3~7층 이용<br>-<br>주차 요원의 안내를 받으세요.</p></div>-->
+<!--                            <div class="sectionBottom">-->
+<!--                                <div class="btn-area">-->
+<!--                                    <a class="t-btn" target="_blank" href="https://naver.me/GQNzkGWF">-->
+<!--                                        주차장 입구 지도 보기-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="tabContent box swiper-slide" data-swiper-slide-index="2" role="group"-->
+<!--                             aria-label="7 / 12" style="margin-right: 30px;">-->
+<!--                            <div class="imgdiv">-->
+<!--                                <div class="img"-->
+<!--                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/dining.jpg&#39;);"></div>-->
+<!--                                <span class="vcenterbox txt">연회 &amp; 식사 안내</span>-->
+<!--                            </div>-->
+<!--                            <div style="font-size: 1.6rem;">연회 &amp; 식사 안내</div>-->
+<!--                            <div class="sectionDesc"><p>웨딩시티는 티앤더블유의&nbsp;<br>30년 외식 노하우를 바탕으로</p>-->
+<!--                                <p>&nbsp;</p>-->
+<!--                                <p>"좋은재료 건강한 맛"을&nbsp;<br>제공하기 위하여 메뉴 하나하나를&nbsp;<br>정성을 다해 조리하고 있습니다.</p></div>-->
+<!--                        </div>-->
+<!--                        <div class="tabContent box swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="3"-->
+<!--                             role="group" aria-label="8 / 12" style="margin-right: 30px;">-->
+<!--                            <div class="imgdiv">-->
+<!--                                <div class="img"-->
+<!--                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/photo_booth.jpg&#39;);"></div>-->
+<!--                                <span class="vcenterbox txt">포토부스 이용안내</span>-->
+<!--                            </div>-->
+<!--                            <div style="font-size: 1.6rem;">포토부스 이용안내</div>-->
+<!--                            <div class="sectionDesc"><p>포토부스가 설치될 예정입니다.&nbsp;<br>귀한 발걸음 해주신 여러분의&nbsp;<br>환한 미소와 따뜻한 말씀-->
+<!--                                남겨주시면&nbsp;<br>소중히 간직하도록 하겠습니다.</p></div>-->
+<!--                        </div>-->
+<!--                        <div class="tabContent box swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"-->
+<!--                             data-swiper-slide-index="0" role="group" aria-label="9 / 12" style="margin-right: 30px;">-->
+<!--                            <div class="imgdiv">-->
+<!--                                <div class="img"-->
+<!--                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/party.jpg&#39;);"></div>-->
+<!--                                <span class="vcenterbox txt">피로연 안내</span>-->
+<!--                            </div>-->
+<!--                            <div style="font-size: 1.6rem;">피로연 안내</div>-->
+<!--                            <div class="sectionDesc"><p>거리가 멀어 본식에 참석하시기 어려운<br>분들을 위해 피로연 자리를 마련하였습니다.</p>-->
+<!--                                <p>&nbsp;</p>-->
+<!--                                <p>귀한 발걸음으로 두 사람의 앞날을<br>축하하여 주시면 더 큰 기쁨과 격려가 되겠습니다.</p>-->
+<!--                                <p>&nbsp;</p>-->
+<!--                                <p>제주 퍼시픽 호텔 2층, PEARL홀<br>2023년 12월 30일 (토) 저녁 7시</p></div>-->
+<!--                            <div class="sectionBottom">-->
+<!--                                <div class="btn-area">-->
+<!--                                    <a class="t-btn" target="_blank" href="https://naver.me/F7C1BR1w">-->
+<!--                                        피로연장 지도 보기-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="tabContent box swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"-->
+<!--                             data-swiper-slide-index="1" role="group" aria-label="10 / 12" style="margin-right: 30px;">-->
+<!--                            <div class="imgdiv">-->
+<!--                                <div class="img"-->
+<!--                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/parking.jpg&#39;);"></div>-->
+<!--                                <span class="vcenterbox txt">주차장 안내</span>-->
+<!--                            </div>-->
+<!--                            <div style="font-size: 1.6rem;">주차장 안내</div>-->
+<!--                            <div class="sectionDesc"><p>테크노마트 지하주차장<br>지하 3~7층 이용<br>-<br>주차 요원의 안내를 받으세요.</p></div>-->
+<!--                            <div class="sectionBottom">-->
+<!--                                <div class="btn-area">-->
+<!--                                    <a class="t-btn" target="_blank" href="https://naver.me/GQNzkGWF">-->
+<!--                                        주차장 입구 지도 보기-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="tabContent box swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2"-->
+<!--                             role="group" aria-label="11 / 12" style="margin-right: 30px;">-->
+<!--                            <div class="imgdiv">-->
+<!--                                <div class="img"-->
+<!--                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/dining.jpg&#39;);"></div>-->
+<!--                                <span class="vcenterbox txt">연회 &amp; 식사 안내</span>-->
+<!--                            </div>-->
+<!--                            <div style="font-size: 1.6rem;">연회 &amp; 식사 안내</div>-->
+<!--                            <div class="sectionDesc"><p>웨딩시티는 티앤더블유의&nbsp;<br>30년 외식 노하우를 바탕으로</p>-->
+<!--                                <p>&nbsp;</p>-->
+<!--                                <p>"좋은재료 건강한 맛"을&nbsp;<br>제공하기 위하여 메뉴 하나하나를&nbsp;<br>정성을 다해 조리하고 있습니다.</p></div>-->
+<!--                        </div>-->
+<!--                        <div class="tabContent box swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3"-->
+<!--                             role="group" aria-label="12 / 12" style="margin-right: 30px;">-->
+<!--                            <div class="imgdiv">-->
+<!--                                <div class="img"-->
+<!--                                     style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/commons/card_info/photo_booth.jpg&#39;);"></div>-->
+<!--                                <span class="vcenterbox txt">포토부스 이용안내</span>-->
+<!--                            </div>-->
+<!--                            <div style="font-size: 1.6rem;">포토부스 이용안내</div>-->
+<!--                            <div class="sectionDesc"><p>포토부스가 설치될 예정입니다.&nbsp;<br>귀한 발걸음 해주신 여러분의&nbsp;<br>환한 미소와 따뜻한 말씀-->
+<!--                                남겨주시면&nbsp;<br>소중히 간직하도록 하겠습니다.</p></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <script>-->
+<!--        let spaceBetween = 30-->
+<!--        new Swiper(".info-swiper-wrapper", {-->
+<!--            slidesPerView: "auto",-->
+<!--            centeredSlides: true,-->
+<!--            spaceBetween: spaceBetween,-->
+<!--            loop: true,-->
+<!--            speed: 500,-->
+<!--        })-->
 
     </script>
     <div id="gustbk_op" class="guestbook-write-page wpopclass anibox_attend hd visible animated faster fadeInUp"
@@ -2889,19 +2782,19 @@
         </div>
     </div>
 
-    <div class="sectionMg layer anibox clearfix noticeSection hd">
-        <div>
-            <div class="sectionHead anibox hd">
-                <div class="enstr">NOTICE</div>
-                <span class="name">포토부스 이용안내</span>
-                <div class="sectionDesc"><p>포토부스가 설치될 예정입니다.&nbsp;<br>귀한 발걸음 해주신 여러분의&nbsp;<br>환한 미소와 따뜻한 말씀 남겨주시면&nbsp;<br>소중히
-                    간직하도록 하겠습니다.</p></div>
-                <div class="sectionBottom">
-                    <div class="img-area"><img src="/snmg/images/gxnabm2ufa-resize.webp"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--    <div class="sectionMg layer anibox clearfix noticeSection hd">-->
+<!--        <div>-->
+<!--            <div class="sectionHead anibox hd">-->
+<!--                <div class="enstr">NOTICE</div>-->
+<!--                <span class="name">포토부스 이용안내</span>-->
+<!--                <div class="sectionDesc"><p>포토부스가 설치될 예정입니다.&nbsp;<br>귀한 발걸음 해주신 여러분의&nbsp;<br>환한 미소와 따뜻한 말씀 남겨주시면&nbsp;<br>소중히-->
+<!--                    간직하도록 하겠습니다.</p></div>-->
+<!--                <div class="sectionBottom">-->
+<!--                    <div class="img-area"><img src="/snmg/images/gxnabm2ufa-resize.webp"></div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <script>
         $(document).ready(function () {
 
@@ -2931,8 +2824,6 @@
             $(".pack.pack_man").click();
 
             $(".kakaopaylink").attr("href", "javascript:alert('샘플 청첩장에는 카톡송금이 불가능합니다.');");
-
-
         });
     </script>
     <div class="sectionMg layer layer02 clearfix acctSection" id="layer_acc_id">
@@ -2949,51 +2840,39 @@
                     <a class="pack pack_man">신랑측 계좌번호<i class="fa fa-chevron-down"></i></a>
                     <ul class="c accordion1 cnt3">
                         <li class="ft-gowun-bold">
-                            신한은행 110-000-0000000<br>
-                            <span class="name">김희망</span>
+                            국민은행 267302-04-292482<br>
+                            <span class="name">이수남</span>
                             <a class="b_1" onclick="copy_to_clipboard2(&#39;actnm1&#39;)">복사하기</a><textarea id="actnm1"
-                                                                                                            class="txtnone">110-000-0000000</textarea>
-                            <a class="b_2 kakaopaylink" href="javascript:alert(&#39;샘플 청첩장에는 카톡송금이 불가능합니다.&#39;);"></a>
+                                                                                                            class="txtnone">267302-04-292482</textarea>
                         </li>
                         <li class="ft-gowun-bold">
-                            신한은행 110-000-0000000<br>
-                            <span class="name">김믿음</span>
+                            국민은행 003-210651-257<br>
+                            <span class="name">이용호</span>
                             <a class="b_1" onclick="copy_to_clipboard2(&#39;actnm3&#39;)">복사하기</a><textarea id="actnm3"
-                                                                                                            class="txtnone">110-000-0000000</textarea>
-                            <a class="b_2 kakaopaylink" href="javascript:alert(&#39;샘플 청첩장에는 카톡송금이 불가능합니다.&#39;);"></a>
+                                                                                                            class="txtnone">003-210651-257</textarea>
                         </li>
                         <li class="ft-gowun-bold">
-                            우리은행 110-000-0000000<br>
-                            <span class="name">이미소</span>
+                            기업은행 684-005864-01-010<br>
+                            <span class="name">차광옥</span>
                             <a class="b_1" onclick="copy_to_clipboard2(&#39;actnm4&#39;)">복사하기</a><textarea id="actnm4"
-                                                                                                            class="txtnone">110-000-0000000</textarea>
-                            <a class="b_2 kakaopaylink" href="javascript:alert(&#39;샘플 청첩장에는 카톡송금이 불가능합니다.&#39;);"></a>
+                                                                                                            class="txtnone">684-005864-01-010</textarea>
                         </li>
                     </ul>
                 </div>
                 <div class="pack_wrap clearfix">
                     <a class="pack pack_woman">신부측 계좌번호<i class="fa fa-chevron-down"></i></a>
-                    <ul class="c accordion2 cnt3">
+                    <ul class="c accordion2 cnt2">
                         <li class="ft-gowun-bold">
-                            우리은행 110-000-0000000<br>
-                            <span class="name">이나은</span>
+                            카카오뱅크 3333-26-1783068<br>
+                            <span class="name">윤명주</span>
                             <a class="b_1" onclick="copy_to_clipboard2(&#39;actnm2&#39;)">복사하기</a><textarea id="actnm2"
-                                                                                                            class="txtnone">110-000-0000000</textarea>
-                            <a class="b_2 kakaopaylink" href="javascript:alert(&#39;샘플 청첩장에는 카톡송금이 불가능합니다.&#39;);"></a>
+                                                                                                            class="txtnone">3333-26-1783068</textarea>
                         </li>
                         <li class="ft-gowun-bold">
-                            우리은행 110-000-0000000<br>
-                            <span class="name">이자명</span>
+                            기업은행 321-006879-03-015<br>
+                            <span class="name">윤장섭</span>
                             <a class="b_1" onclick="copy_to_clipboard2(&#39;actnm5&#39;)">복사하기</a><textarea id="actnm5"
-                                                                                                            class="txtnone">110-000-0000000</textarea>
-                            <a class="b_2 kakaopaylink" href="javascript:alert(&#39;샘플 청첩장에는 카톡송금이 불가능합니다.&#39;);"></a>
-                        </li>
-                        <li class="ft-gowun-bold">
-                            우리은행 110-000-0000000<br>
-                            <span class="name">유관순</span>
-                            <a class="b_1" onclick="copy_to_clipboard2(&#39;actnm6&#39;)">복사하기</a><textarea id="actnm6"
-                                                                                                            class="txtnone">110-000-0000000</textarea>
-                            <a class="b_2 kakaopaylink" href="javascript:alert(&#39;샘플 청첩장에는 카톡송금이 불가능합니다.&#39;);"></a>
+                                                                                                            class="txtnone">321-006879-03-015</textarea>
                         </li>
                     </ul>
                 </div>
@@ -3282,7 +3161,7 @@
         </div>
         <div class="banner01 auto"
              style="background-image: url(&#39;https://d38fyys32noduv.cloudfront.net/resources/1/card/Zq6maHONAZmMgTmXvFLKiqeUe5njUQ/kHGcQnqWRe-resize.webp&#39;);">
-            <img class="imgblk" src="/snmg/images/kHGcQnqWRe-resize.webp">
+            <img class="imgblk" src="/snmg/images/20.jpg">
             <div class="cover" style="overflow: hidden;">
                 <div class="vcenterbox" style="text-align: ">
                     <p>&nbsp;</p>
@@ -3307,37 +3186,106 @@
             </svg>
         </div>
     </div>
-
-    <div style="text-align: center;" class="ft-gowun-bold">
-        <div id="kakao-link-btn" onclick="sendLink()"
-             style="padding: 30px 0 10px 0; margin-bottom: -10px; position: relative; z-index: 10; cursor: pointer;">
-            <a class="kkt-share">카카오톡으로 초대장 보내기</a>
-            <input type="hidden" name="kt_01" value="이수남, 윤명주 결혼합니다♥">
-            <input type="hidden" name="kt_02" value="12월 2일 토요일 오전 11시
-경민컨벤션웨딩홀">
-        </div>
-    </div>
+<!--    <div style="text-align: center;" class="ft-gowun-bold">-->
+<!--        <div id="kakao-link-btn" onclick="sendLink()"-->
+<!--             style="padding: 30px 0 10px 0; margin-bottom: -10px; position: relative; z-index: 10; cursor: pointer;">-->
+<!--            <a class="kkt-share">카카오톡으로 초대장 보내기</a>-->
+<!--            <input type="hidden" name="kt_01" value="이수남, 윤명주 결혼합니다♥">-->
+<!--            <input type="hidden" name="kt_02" value="12월 2일 토요일 오전 11시-->
+<!--경민컨벤션웨딩홀">-->
+<!--        </div>-->
+<!--    </div>-->
 </div>
+<script src="/snmg/js/hls.js.다운로드"></script>
+<script src="/snmg/js/swiper-bundle.min.js.다운로드"></script>
 <script src="/snmg/js/moment.js.다운로드"></script>
 <script src="/snmg/js/moment-with-locales.js.다운로드"></script>
 <script src="/snmg/js/swiper-bundle.min.js.다운로드"></script>
 <script src="/snmg/js/fontawesome.min.js.다운로드" loading="lazy"></script>
 <script type="text/javascript" src="/snmg/js/maps.js.다운로드"></script>
 <script type="text/javascript" src="/snmg/js/maps-geocoder.js.다운로드"></script>
-<script style="text/javascript" src="/snmg/js/card.show.js.다운로드"></script>
+<script type="text/javascript" src="/snmg/js/card.show.js.다운로드"></script>
 <script src="/snmg/js/kakao.min.js.다운로드"
         integrity="sha384-eKjgHJ9+vwU/FCSUG3nV1RKFolUXLsc6nLQ2R1tD0t4YFPCvRmkcF8saIfOZNWf/"
         crossorigin="anonymous"></script>
-
 <script>
+    function loading(go) {
+        if (go) {
+            $("#loadBox2020").css("display", "block");
+        } else {
+            $("#loadBox2020").css("display", "none");
+        }
+    }
+
+    let isPlay = true
+
+    $(".popImg .x_button").click(function () {
+        $(".pageCover").removeClass("blur6");
+        $(".popImg").removeClass("visible");
+    });
+
+    function openMapImg() {
+        $(".pageCover").addClass("blur6");
+        $(".popImg").addClass("visible");
+    }
+
+    var mySwiper = new Swiper('#roughMapContainer', {
+        // Optional parameters
+        direction: '',
+        loop: false,
+
+        zoom: {
+            maxRatio: 3,
+            minRatio: 1
+        },
+    })
+
+    function openAlert(txt) {
+        $(".popAlert .title").text(txt);
+        $(".popAlert").css("display", "block");
+    }
+
+    $(".popAlert .background, .popAlert button").click(function () {
+        $(".popAlert").css("display", "none");
+        if (isAcctBox) {
+            document.querySelector(`#acctBox`).style.display = 'block'
+        }
+    });
+
+    $("#tel_popup .x_button").click(function () {
+        $("body").removeClass("pop_contact_open");
+        $('html,body').css("overflow", "");
+        window.scrollTo(0, WIN_SCR_TOP);
+    });
+
+    $("#interview_pop .x_button").click(function () {
+        $("body").removeClass("pop_interview_open");
+        $('html,body').css("overflow", "");
+        window.scrollTo(0, WIN_SCR_TOP);
+    });
+
     try {
         Kakao.init('672965c4b505451294a6ca90fcdfa643');
     } catch (error) {
 
     }
-</script>
 
-<script>
+    $(".popNoticeImg .x_button").click(function () {
+        $(".pageCover").removeClass("blur6");
+        $(".popNoticeImg").removeClass("visible");
+    });
+
+    var mySwiper = new Swiper('#popNoticeImgWrap', {
+        // Optional parameters
+        direction: '',
+        loop: false,
+
+        zoom: {
+            maxRatio: 3,
+            minRatio: 1
+        },
+    })
+
     function snowfallevt() {
         $(".pageCover").snowfall({
             image: "http://theirmood.com/src/img/flake.png",
@@ -3348,10 +3296,7 @@
             minSpeed: 1
         });
     }
-
     var bgeffSnow = false;
-</script>
-<script>
     var bgeffscrl = 'top';
     $(document).ready(function () {
         $(window).scroll(function () {
@@ -3386,13 +3331,6 @@
             }
         });
     });
-</script>
-<script>
-
-    //=============================================
-    // 축하화환 처리
-
-
     //=============================================
     // 오프닝 스플래시 + BGM + 축하화환 처리
 
@@ -3423,21 +3361,6 @@
     // 캘린더
 
     function initCalander() {
-        /*
-            let lastDate = new Date('2024', '5', 0);
-            var lastDay = lastDate.getDate();
-
-            console.log("lastDate:"+lastDate.getDay());
-            console.log("lastDay:"+lastDay);
-
-            var week = new Array(0, 1, 2, 3, 4, 5, 6);
-            var marriedDate = new Date('2024-05-01').getDay();
-            var todayLabel = week[marriedDate];
-
-            console.log(marriedDate);
-            console.log(todayLabel);
-        */
-
         var lastDate = moment('2023-12-01').locale('ko');
         var lastDay = parseInt(lastDate.endOf('month').format('D'));
 
@@ -3447,10 +3370,7 @@
         var week = new Array(0, 1, 2, 3, 4, 5, 6);
         var marriedDate = new moment('2023-12-01').locale('ko').day();
         var todayLabel = week[marriedDate];
-
-
         var dday = '2';
-
         var c = '';
         var j = 0;
         var r = 1;
@@ -3503,8 +3423,6 @@
             });
         }
     });
-
-
     //=============================================
     // 카톡 초대장 보내기
     if ($("#kakao-link-btn").is(":visible")) {
@@ -3530,28 +3448,10 @@
                 })
             }
         } catch {
-
         }
-
     }
-
-    //=============================================
-    // 식전영상
-    //Youtube API 로드
-
-
-    //=============================================
-    // 오시는길 네이버지도
-
-
-    //=============================================
-    // 구글 지도
-
-
     //=============================================
     // 갤러리
-
-
     function swipeGallery01() {
         var imglen = $("#swipelistid > .swiper-slide").length;
         //console.log('이미지 갯수: '+imglen);
@@ -3590,8 +3490,6 @@
                     }
                 }
             });
-
-
         } else if (imglen == 1) {
             $(".gallHeightAdj").css("height", "75px");
             $(".swiper-opts").detach();
@@ -3605,14 +3503,10 @@
         $("#swipelistid .swiper-slide").click(function () {
             zoomGallOpen($(this).attr("data-order"));
         });
-
     }
-
     function swipeGallery02() {
         var imglen = $("#thumblistid > .swiper-slide").length;
         //console.log('이미지 갯수: '+imglen);
-
-
         if (imglen > 1) {
             var swiper = new Swiper(".mySwiper", {
                 loop: true,
@@ -3680,10 +3574,7 @@
             $(".layer01 .title2").css("padding-top", "0px");
         }
     }
-
     swipeGallery02();
-
-
     //=============================================
     // 페이지가 샤르륵 나타나는 효과
     $(document).ready(function () {
@@ -3696,8 +3587,6 @@
         });
 
     });
-
-
     //=============================================
     // 방명록
 
@@ -3713,7 +3602,6 @@
 
     var loadBooksAnysc = true;
     var booksPage = 0;
-
 
     function loadBooks() {
 
@@ -3809,7 +3697,6 @@
         });
     }
 
-
     if ($(".books-swiper").is(":visible")) {
         new Swiper('.books-swiper', {
             slidesPerView: "auto",
@@ -3820,11 +3707,7 @@
             },
         });
     }
-
-
     loadBooks();
-
-
     gubook_write_sctop = 0;
 
     // 방명록 전체보기 팝업 열기
@@ -3912,7 +3795,6 @@
                 }
             });
         }
-
     });
 </script>
 </body>

@@ -1253,6 +1253,7 @@
     </ul>
     <div style="height: 40px; display: block;"></div>
 </div>
+<script type="text/javascript" src="/snmg/js/kakao.js" crossorigin="anonymous"></script>
 <script>
     $("#interview_pop .x_button").click(function () {
         $("body").removeClass("pop_interview_open");
@@ -1260,10 +1261,14 @@
         window.scrollTo(0, WIN_SCR_TOP);
     });
 
-    try {
-        Kakao.init('346fa66717a06a7ca056f90f3a449b46');
-    } catch (error) {
-
+    Kakao.init('346fa66717a06a7ca056f90f3a449b46'); // 사용하려는 앱의 JavaScript 키 입력
+    function startNavigation() {
+        Kakao.Navi.share({
+            name: '경민대학교',
+            x: 127.0243095,
+            y: 37.7456611,
+            coordType: 'wgs84',
+        });
     }
 </script>
 <div class="pageCover clearfix single" style="position: relative; background-color:#fafafa">
@@ -2054,7 +2059,7 @@
                 <div class="navi_button_wrap">
                     <a class="navi_button" onclick="fnCallWeb2App(&#39;naverMap&#39;)"><span>네이버지도</span></a>
                     <a class="navi_button" onclick="fnCallWeb2App(&#39;tmap&#39;)"><span>티맵</span></a>
-                    <a class="navi_button" onclick="fnCallWeb2App(&#39;kakaoNavi&#39;)"><span>카카오내비</span></a>
+                    <a class="navi_button" onclick="startNavigation()"><span>카카오내비</span></a>
                 </div>
             </li>
             <li class="li f16">
@@ -2250,7 +2255,6 @@
 <script type="text/javascript" src="/snmg/js/maps.js"></script>
 <script type="text/javascript" src="/snmg/js/maps-geocoder.js"></script>
 <script type="text/javascript" src="/snmg/js/card.show.js"></script>
-<script type="text/javascript" src="/snmg/js/kakao.js" crossorigin="anonymous"></script>
 
 <script>
     function snowfallevt() {
@@ -2628,7 +2632,6 @@
             },
         });
     }
-    loadBooks();
     gubook_write_sctop = 0;
 
     // 방명록 전체보기 팝업 열기

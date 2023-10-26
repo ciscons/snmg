@@ -1836,45 +1836,54 @@
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
                         <td class="cal_tr_td_1">1</td>
                         <td><span class="dday">2</span></td>
-                        <td class="cal_tr_td_3">3</td>
-                        <td class="cal_tr_td_4">4</td>
                     </tr>
                     <tr>
+                        <td class="cal_tr_td_3">3</td>
+                        <td class="cal_tr_td_4">4</td>
                         <td class="cal_tr_td_5">5</td>
                         <td class="cal_tr_td_6">6</td>
                         <td class="cal_tr_td_7">7</td>
                         <td class="cal_tr_td_8">8</td>
                         <td class="cal_tr_td_9">9</td>
-                        <td class="cal_tr_td_10">10</td>
-                        <td class="cal_tr_td_11">11</td>
                     </tr>
                     <tr>
+                        <td class="cal_tr_td_10">10</td>
+                        <td class="cal_tr_td_11">11</td>
                         <td class="cal_tr_td_12">12</td>
                         <td class="cal_tr_td_13">13</td>
                         <td class="cal_tr_td_14">14</td>
                         <td class="cal_tr_td_15">15</td>
                         <td class="cal_tr_td_16">16</td>
-                        <td class="cal_tr_td_17">17</td>
-                        <td class="cal_tr_td_18">18</td>
                     </tr>
                     <tr>
+                        <td class="cal_tr_td_17">17</td>
+                        <td class="cal_tr_td_18">18</td>
                         <td class="cal_tr_td_19">19</td>
                         <td class="cal_tr_td_20">20</td>
                         <td class="cal_tr_td_21">21</td>
                         <td class="cal_tr_td_22">22</td>
                         <td class="cal_tr_td_23">23</td>
-                        <td class="cal_tr_td_24">24</td>
-                        <td class="cal_tr_td_25">25</td>
                     </tr>
                     <tr>
+                        <td class="cal_tr_td_24">24</td>
+                        <td class="cal_tr_td_25">25</td>
                         <td class="cal_tr_td_26">26</td>
                         <td class="cal_tr_td_27">27</td>
                         <td class="cal_tr_td_28">28</td>
                         <td class="cal_tr_td_29">29</td>
+                    </tr>
+                    <tr>
                         <td class="cal_tr_td_30">30</td>
                         <td class="cal_tr_td_31">31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     </tbody>
                 </table>
@@ -2384,34 +2393,6 @@
     }
 
     //=============================================
-    // 카톡 초대장 보내기
-    if ($("#kakao-link-btn").is(":visible")) {
-        try {
-            //Kakao.init('672965c4b505451294a6ca90fcdfa643');
-
-            function sendLink() {
-                var t = $("input[name=kt_01]").val();
-                var d = $("input[name=kt_02]").val();
-
-                var kImg = 'https://d38fyys32noduv.cloudfront.net/resources/1/card/Zq6maHONAZmMgTmXvFLKiqeUe5njUQ/4hVgCkaokb-resize.webp';
-                if (!kImg.includes('http')) {
-                    kImg = "https://theirmood.com" + kImg;
-                }
-
-                Kakao.Share.sendCustom({
-                    templateId: 75105, templateArgs: {
-                        idx: "Zq6maHONAZmMgTmXvFLKiqeUe5njUQ",
-                        img: kImg,
-                        title: t,
-                        description: d
-                    },
-                })
-            }
-        } catch {
-
-        }
-
-    }
 
     //=============================================
     // 식전영상
